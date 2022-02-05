@@ -1,0 +1,18 @@
+# Creating python virtual environment
+ python3 -m venv .venv
+# Force Set-ExecutionPolicy on windows
+Set-ExecutionPolicy Unrestricted -Force
+# Activating environment on windows
+.venv\scripts\activating
+# Upgrade pip
+python -m pip install --upgrade pip
+# Install django module
+python -m pip install django
+# Starting Django project
+django-admin startproject MyReports .
+# Creating app in django
+python manage.py startapp users
+# Create migrations
+python manage.py makemigrations
+ # Apply migrations
+ python manage.py migrate  
